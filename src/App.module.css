@@ -19,20 +19,103 @@
 }
 
 .inputNewTaks {
-    width: 638px;
-    height: 54px;
+    width: 39.88rem;
+    height: 3.38rem;
     border-radius: 6px;
     background-color: var(--grey-500);
-    border:0px;
+    border:0px;    
     padding: 16px;
     color: var(--grey-300);
+    outline: none;
+}
+
+input[type="text"]:focus {    
+    border: 1px solid var(--purple);
 }
 
 .buttonNewTaks {
-    width: 90px;
-    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 5.62rem;
+    height: 3.25rem;
     background-color: var(--blue-dark);
     border-radius: 6px;
     border: 0;
     color: var(--grey-100);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap:4px;
+
+}
+
+
+.containerEmptyContent {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;    
+    /*border: 1px solid white;*/
+    margin-top: 50px;
+}
+
+.containerTask {
+    display: flex;
+    flex-direction: column;    
+    align-items:stretch;
+    width:736px;
+    height:287px;
+    background-color:var(--black);
+}
+
+.headerInfoTasks {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);    
+}
+
+.headerInfoTasks > span {
+    color: var(--blue-dark);        
+    width:138px;
+    height:19px;    
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.completedTaskText {
+    color: var(--purple) !important;        
+}
+
+.completedTasks {
+ border:none;   
+ border-radius: 8px;
+ background: var(--grey-300);
+ width:24px;
+ height: 19px;
+ font-weight: bold;   
+ font-size: 12px;
+ padding: 0px 6px;
+ color:var(--grey-100); 
+}
+
+.totalTasks {
+    border: none;
+    border-radius: 8px;
+    background: var(--grey-300);
+    width:24px;
+    height: 19px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0px 6px;
+    color:var(--grey-100);
+}
+
+
+
+.contentInfoTasks {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;    
+    background-color: var(--black);
+    border:0px solid var(--grey-100);
+    margin-top: 24px;
 }
