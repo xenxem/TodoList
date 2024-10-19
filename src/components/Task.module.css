@@ -20,17 +20,12 @@
     text-align: justify;    
 }
 
-.tresh {
-    cursor: pointer;    
-}
-
-.check {    
+ .check {    
   cursor: pointer;  
-  background-image: url('../../public/check.png');
-  background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
-  background-position: center; /* Centraliza a imagem no elemento */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-}
+} 
+
+
+
 
 
   

@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import {PlusCircle} from 'phosphor-react';
 import { ChangeEvent, Fragment, useState } from 'react';
 import { Task } from './components/Task';
+import { TaskEmpty } from './components/TaskEmpty';
 
 
 function App() {  
@@ -26,10 +27,16 @@ function App() {
 
     if(tarefasTotais === 0){
       return (
-        <div className={styles.headerInfoTasks}>
-          <span>Tarefas criadas <span className={styles.completedTasks}>{0}</span></span>
-          <span className={styles.completedTaskText}>Concluídas <span className={styles.totalTasks}>{0} de {0}</span></span>
-        </div> )
+        <>
+          <div className={styles.headerInfoTasks}>
+            <span>Tarefas criadas <span className={styles.completedTasks}>{0}</span></span>
+            <span className={styles.completedTaskText}>Concluídas <span className={styles.totalTasks}>{0} de {0}</span></span>
+          </div> 
+          <div>
+            <TaskEmpty />
+          </div>
+        </>
+      )
     }else{
       return (
       <>
@@ -68,7 +75,7 @@ function App() {
     </div> 
     <div className={styles.containerEmptyContent}>
       <div className={styles.containerTask}>
-          {reenderTaskInfo()}
+          { reenderTaskInfo() }
       </div>
     </div>       
    </Fragment>

@@ -1,0 +1,9 @@
+/* App.css */
+.tresh {
+    color: var(--grey-300); /* Ou qualquer outra cor */
+  }
+  
+.tresh:hover {
+color: var(--danger); /* A cor muda para vermelho ao passar o mouse */
+cursor: pointer;
+}

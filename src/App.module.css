@@ -123,7 +123,7 @@ input[type="text"]:focus {
     height: 19px;
     font-weight: bold;
     font-size: 12px;
-    padding: 2px 7px;
+    padding: 2px 20px;
     color:var(--grey-200);
 }
 
