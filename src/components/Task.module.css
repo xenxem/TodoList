@@ -1,0 +1,42 @@
+.descriptionTask {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap: 14px;
+    background-color: var(--grey-500);
+    color: var(--grey-300);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 72px;
+    width: 736px;
+    padding: 16px;
+    border: 1px solid var(--grey-400);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);    
+}
+
+.descriptionVerticalAlign {
+    vertical-align: top;
+    text-align: justify;    
+}
+
+.tresh {
+    cursor: pointer;    
+}
+
+.check {    
+  cursor: pointer;  
+  background-image: url('../../public/check.png');
+  background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+
+  
+
+
+
+
+  
+  
