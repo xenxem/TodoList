@@ -1,6 +1,5 @@
 
 import styles from './Task.module.css'
-import TreshSVG from './TreshSVG';
 import { TarefaType } from '../App';
 
 
@@ -44,7 +43,7 @@ export const Task: React.FC<TaskProps> = ({ id, titulo, concluida, setTarefa, de
             <div className={styles.title}><span className={concluida ? styles.linethrough:''}>{titulo}</span></div>
         </div>
         <div className={styles.imageColumn}>
-            
+
         <svg onClick={onClickDelete} className={styles.tresh} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14.2021 9.98547H12.8716V15.5073H14.2021V9.98547Z" fill="currentColor" />
         <path d="M11.4624 9.98547H10.1318V15.5073H11.4624V9.98547Z" fill="currentColor" />
