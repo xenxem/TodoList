@@ -134,7 +134,9 @@ input[type="text"]:focus {
     background-color: var(--black);
     border:0px solid var(--grey-100);
     margin-top: 24px;
-    color:var(--grey-200);    
+    color:var(--grey-200); 
+    gap: 12px; /* espaçamento entre um elemento e outro */   
 }
+
 
 

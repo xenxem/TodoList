@@ -1,4 +1,4 @@
-.descriptionTask {
+/* .descriptionTask {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -12,17 +12,80 @@
     width: 736px;
     padding: 16px;
     border: 1px solid var(--grey-400);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+    
+    
 }
 
 .descriptionVerticalAlign {
-    vertical-align: top;
-    text-align: justify;    
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    
 }
-
  .check {    
   cursor: pointer;  
-} 
+}  */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px; /* Colunas: imagem (40px), título flexível (1fr), imagem (40px) */
+    max-width: 736px; /* Limite máximo da largura */
+    align-items: flex-start; /* Alinha os itens no topo */
+    box-sizing: border-box;
+    height: 72px;
+    padding: 10px;
+    border:1px solid var(--grey-400);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0,0.5); /* Sombreamento suave */
+    padding: 20px; /* Espaçamento interno */
+    background-color: var(--grey-500);
+    color:var(--grey-300);
+    
+    
+  }
+  
+  .imageColumn {
+    width: 40px; /* Largura fixa para as imagens */
+    display: flex; /* Flex para centrar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+  
+  /* .image {
+    width: 40px; 
+    height: 40px;
+  } */
+  
+  .titleColumn {
+    display: flex;
+    align-items: flex-start; /* Alinha o título ao topo */
+    overflow: hidden; /* Oculta o que extrapolar */
+
+  }
+  
+  .title {
+    text-align: left;              /* Alinha o texto à esquerda */
+    overflow-wrap: break-word;     /* Permite que o texto quebre em várias linhas */
+    word-wrap: break-word;         /* Garante que o texto quebre corretamente */
+    white-space: normal;           /* Permite a quebra de linha */
+    max-width: 100%;               /* Garante que o título não ultrapasse a coluna */
+  }
+  
+  
+  .linethrough{
+    text-decoration: line-through;
+  }
+
+  /* App.css */
+.tresh {
+  color: var(--grey-300); /* Ou qualquer outra cor */
+}
+
+.tresh:hover {
+color: var(--danger); /* A cor muda para vermelho ao passar o mouse */
+cursor: pointer;
+}
+  
+  
 
 
 
