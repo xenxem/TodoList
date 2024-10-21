@@ -31,20 +31,19 @@ function App() {
       prevState.map((tarefa) =>
         tarefa.id === id ? {...tarefa, concluida: !concluida } : tarefa
     )))        
-    finishedTasks();
+    //finishedTasks();
   };
 
-  const deleteTask = (id:string)=>{
-    
+  const deleteTask = (id:string)=>{    
     const tarefas = tarefa.filter(tarefa => tarefa.id !== id);
     setTarefa(tarefas);
-    setTarefasConcluidas(tarefas.length);       
+    //setTarefasConcluidas(tarefas.length);       
   }
 
-  const finishedTasks = () => {
-      const tarefas = tarefa.filter(tarefa => tarefa.concluida === true);
-      setTarefasConcluidas(tarefas.length);       
-  } 
+  // const finishedTasks = () => {
+  //     const tarefas = tarefa.filter(tarefa => tarefa.concluida === true);
+  //     setTarefasConcluidas(tarefas.length);       
+  // } 
 
  function handleNewTask() {    
   const novaTarefa: TarefaType = {
@@ -59,8 +58,6 @@ function App() {
           const value = e.target.value;
           setTarefaDescricao(value);
   }
-
-
 
   const reenderTaskInfo = () => {
 
